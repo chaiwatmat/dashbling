@@ -39,16 +39,13 @@ module.exports = class extends Generator {
       },
       browserslist: "last 2 versions",
       devDependencies: {
-        "@dashbling/build-support":
-          process.env.DASHBLING_BUILD_SUPPORT_PACKAGE || dashblingVersion
+        "@dashbling/build-support": process.env.DASHBLING_BUILD_SUPPORT_PACKAGE || dashblingVersion
       },
       dependencies: {
         react: "^16.2",
         "react-dom": "^16.2",
-        "@dashbling/core":
-          process.env.DASHBLING_CORE_PACKAGE || dashblingVersion,
-        "@dashbling/client":
-          process.env.DASHBLING_CLIENT_PACKAGE || dashblingVersion,
+        "@dashbling/core": process.env.DASHBLING_CORE_PACKAGE || dashblingVersion,
+        "@dashbling/client": process.env.DASHBLING_CLIENT_PACKAGE || dashblingVersion,
         "dashbling-widget-weather": "^2.0.0"
       }
     });
