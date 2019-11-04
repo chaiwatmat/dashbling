@@ -6,11 +6,9 @@ import { Clock } from "@dashbling/client/widgets";
 import { HelloWidget } from "./widgets/HelloWidget";
 import { GitHubStars } from "./widgets/gitHubStars/GitHubStars";
 import { CircleCiStatus } from "./widgets/circleCi/CircleCiStatus";
-import { WeatherWidget } from "dashbling-widget-weather";
 
 const DashblingGitHubStars = connect("github-stars-dashbling")(GitHubStars);
 const DashblingCiStatus = connect("dashbling-ci-status")(CircleCiStatus);
-const WeatherInAmsterdam = connect("weather-amsterdam")(WeatherWidget);
 const BoundHelloWidget = connect("hello")(HelloWidget);
 
 export default props => {
@@ -23,7 +21,6 @@ export default props => {
       />
       <BoundHelloWidget />
 
-      <WeatherInAmsterdam title="Amsterdam" />
       <DashblingGitHubStars />
       <DashblingCiStatus />
     </Dashboard>
